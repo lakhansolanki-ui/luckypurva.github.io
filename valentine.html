@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Will You Be My Valentine ❤️</title>
+  <style>
+    body {
+      font-family: Arial;
+      background:#ffe4ec;
+      text-align:center;
+      padding-top:80px;
+    }
+    h1 { color:#c2185b; }
+    button {
+      background:#c2185b;
+      color:white;
+      border:none;
+      padding:15px 30px;
+      font-size:20px;
+      border-radius:30px;
+      cursor:pointer;
+    }
+    #popup {
+      display:none;
+      position:fixed;
+      top:0; left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.6);
+    }
+    #popupContent {
+      background:white;
+      width:340px;
+      padding:20px;
+      border-radius:20px;
+      margin:80px auto;
+    }
+    img {
+      width:100%;
+      border-radius:15px;
+      margin-bottom:10px;
+    }
+  </style>
+
+  <script>
+    function showPopup() {
+      document.getElementById("popup").style.display = "block";
+    }
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+</head>
+
+<body>
+
+<h1>Will you be my Valentine, Purva? ❤️</h1>
+
+<button onclick="showPopup()">YES 💖</button>
+
+<div id="popup" onclick="closePopup()">
+  <div id="popupContent">
+    <img src="purva-love.png">
+    <img src="https://media.giphy.com/media/3oz8xIsloV7zOmt81G/giphy.gif">
+    <p><b>You made me the happiest 💕</b></p>
+  </div>
+</div>
+
+<br><br>
+<a href="index.html">⬅ Back</a>
+
+</body>
+</html>
